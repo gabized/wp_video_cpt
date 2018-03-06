@@ -1,0 +1,57 @@
+/*frontend styles for the video box*/
+
+.vcpt_cont {
+  clear: both;
+}
+.vcpt_iframe_outer {
+  width: 35%;
+  float: left;
+  display: block;
+}
+.vcpt_iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+  .vcpt_iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+.vcpt_info {
+  width: 62%;
+  float: right;
+  display: block;
+}
+  .vcpt_info h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4a4a4a; /*although we should leave this blank so it inherits the themes colors*/
+    text-transform: capitalize; /*as seen on the model*/
+  }
+  .vcpt_subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a4a4a; /*although we should leave this blank so it inherits the themes colors*/
+    text-transform: capitalize; /*as seen on the model*/
+  }
+  .vcpt_desc {
+    font-size: 16px;
+  }
+
+.clr {
+  clear: both;
+}
+
+@media all and (max-width: 640px) {
+  .vcpt_iframe, .vcpt_info {
+    float: none;
+    width: 96%;
+    margin:2%;
+    clear: both;
+  }
+}
